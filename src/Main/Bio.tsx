@@ -8,8 +8,18 @@ export function Bio() {
         <div>
           <div>Name: Tim</div>
           <div>Nationality: Singapore Citizen</div>
-          <div>OS: Ubuntu</div>
-          <div>Hobby: PC gaming</div>
+          <div>Email: tlim8772@gmail.com</div>
+          <div>
+            Github:&nbsp;
+            <a 
+              href="https://github.com/obrona" 
+              target="_blank" 
+              rel="noreferrer"
+              className="text-blue-600 underline"
+            >
+                https://github.com/obrona
+              </a>
+          </div>
         </div>
       </div>
     </div>
