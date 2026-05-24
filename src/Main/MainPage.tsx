@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Bio } from "./Bio";
 
 interface TabProps {
   tabs: string[],
@@ -14,7 +15,7 @@ function Tabs(props: TabProps) {
       case true:
         return 'rounded-[16px] border border-gray-200 p-2 bg-blue-200'
       default:
-        return ''
+        return 'rounded-[16px] p-2 hover:bg-gray-200'
     }
   }
 
@@ -46,6 +47,7 @@ export function MainPage() {
   return (
     <div className='relative min-h-screen w-full'>
       <Tabs tabs={tabs} selected={selectedTab} onSelect={onSelect} />
+      {selectedTab === 'Bio' && <Bio />}
     </div>
   )
 }
