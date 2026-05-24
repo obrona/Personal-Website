@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Bio } from "./Bio";
+import { Education } from "./Education";
 
 interface TabProps {
   tabs: string[],
@@ -24,6 +25,7 @@ function Tabs(props: TabProps) {
       {tabs.map(tab => {
         return (
           <div 
+            key={tab}
             className={tabStyle(tab === selected)}
             onClick={() => onSelect(tab)}
           >
@@ -48,6 +50,7 @@ export function MainPage() {
     <div className='relative min-h-screen w-full'>
       <Tabs tabs={tabs} selected={selectedTab} onSelect={onSelect} />
       {selectedTab === 'Bio' && <Bio />}
+      {selectedTab === 'Education' && <Education />}
     </div>
   )
 }
