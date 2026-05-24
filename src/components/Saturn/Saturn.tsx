@@ -2,6 +2,8 @@ import type { CSSProperties } from "react";
 
 import styles from "./Saturn.module.css";
 
+const starCount = 12;
+
 export interface SaturnProps {
   width?: number | string;
   height?: number | string;
@@ -36,6 +38,11 @@ export function Saturn({
       aria-label={ariaLabel}
       aria-hidden={ariaLabel ? undefined : true}
     >
+      <div className={styles.stars} aria-hidden="true">
+        {Array.from({ length: starCount }, (_, index) => (
+          <div className={styles.star} key={index} />
+        ))}
+      </div>
       <div className={styles.glow} />
       <div className={styles.ringsBack}>
         <div className={styles.ringDust} />
