@@ -3,7 +3,7 @@ import { Timeline, TimelineBody, TimelineContent, TimelineItem, TimelinePoint, T
 export function Education() {
   return (
     <div className='h-full w-98/100 flex flex-col items-center'>
-      <Timeline className='mt-16'>
+      <Timeline className='mt-24'>
         <TimelineItem>
           <TimelinePoint />
           <TimelineContent>

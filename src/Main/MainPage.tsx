@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Bio } from "./Bio";
 import { Education } from "./Education";
+import { Skills } from "./Skills";
 
 interface TabProps {
   tabs: string[],
@@ -37,7 +38,7 @@ function Tabs(props: TabProps) {
   )
 }
 
-const tabs = ['Bio', 'Education', 'Work', 'Skills'];
+const tabs = ['Bio', 'Education', 'Work', 'Projects', 'Skills'];
 
 export function MainPage() {
   const [selectedTab, setSelectedTab] = useState<string>(tabs[0]);
@@ -51,6 +52,7 @@ export function MainPage() {
       <Tabs tabs={tabs} selected={selectedTab} onSelect={onSelect} />
       {selectedTab === 'Bio' && <Bio />}
       {selectedTab === 'Education' && <Education />}
+      {selectedTab === 'Skills' && <Skills />}
     </div>
   )
 }
