@@ -8,7 +8,7 @@ export function Bio() {
         <div>
           <div>Name: Tim</div>
           <div>Nationality: Singapore Citizen</div>
-          <div>Favourite food: McDonalds</div>
+          <div>OS: Ubuntu</div>
           <div>Hobby: PC gaming</div>
         </div>
       </div>
