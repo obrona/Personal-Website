@@ -36,7 +36,7 @@ export function Skills() {
 
       <SkillsGrid
         title='Web Development'
-        skills={['React', 'Express', 'SocketIO', 'WebSocket', 'Redis', 'MaterialUI', 'TailwindCSS']}
+        skills={['React', 'Node.js', 'Express', 'SocketIO', 'WebSocket', 'Redis', 'MaterialUI', 'TailwindCSS']}
       />
 
       <SkillsGrid
