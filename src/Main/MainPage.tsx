@@ -4,6 +4,7 @@ import { Education } from "./Education";
 import { Skills } from "./Skills";
 import { Work } from "./Work";
 import { Projects } from "./Projects";
+import { Dropdown, DropdownItem } from "flowbite-react"
 
 interface TabProps {
   tabs: string[],
@@ -24,7 +25,9 @@ function Tabs(props: TabProps) {
   }
 
   return (
-    <div className='absolute top-4 left-1/2 -translate-x-1/2 text-lg flex items-center justify-center gap-4'>
+    <div className='w-[96%] absolute top-4 left-1/2 -translate-x-1/2 text-lg flex items-center justify-center gap-4'>
+      <div className='mr-auto text-blue-500 cursor-default'>Tim's website</div>
+
       {tabs.map(tab => {
         return (
           <div 
@@ -36,6 +39,21 @@ function Tabs(props: TabProps) {
           </div>
         )
       })}
+
+      <div className="ml-auto">
+        <Dropdown
+          className='text-blue-500'
+          label="Account"
+          arrowIcon={false}
+          inline
+          theme={{
+            inlineWrapper: "text-blue-500 hover:text-blue-700 cursor-pointer",
+          }}
+        >
+          <DropdownItem>Profile</DropdownItem>
+          <DropdownItem className="text-red-500">Logout</DropdownItem>
+        </Dropdown>
+      </div>
     </div>
   )
 }
