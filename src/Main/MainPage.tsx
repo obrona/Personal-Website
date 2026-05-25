@@ -3,6 +3,7 @@ import { Bio } from "./Bio";
 import { Education } from "./Education";
 import { Skills } from "./Skills";
 import { Work } from "./Work";
+import { Projects } from "./Projects";
 
 interface TabProps {
   tabs: string[],
@@ -28,10 +29,10 @@ function Tabs(props: TabProps) {
         return (
           <div 
             key={tab}
-            className={tabStyle(tab === selected)}
+            className={`cursor-default ${tabStyle(tab === selected)}`}
             onClick={() => onSelect(tab)}
           >
-              {tab}
+            {tab}
           </div>
         )
       })}
@@ -54,6 +55,7 @@ export function MainPage() {
       {selectedTab === 'Bio' && <Bio />}
       {selectedTab === 'Education' && <Education />}
       {selectedTab === 'Work' && <Work />}
+      {selectedTab === 'Projects' && <Projects />}
       {selectedTab === 'Skills' && <Skills />}
     </div>
   )
