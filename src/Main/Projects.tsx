@@ -60,7 +60,16 @@ export function Projects() {
 
         <AccordionPanel>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>Train Network Simulator</AccordionTitle>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/Train-Network-Simulator"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Train Network Simulator
+              </a>
+            </AccordionTitle>
             <AccordionContent>
               <ul className='list-disc pl-5'>
                 <li>
@@ -73,7 +82,16 @@ export function Projects() {
 
         <AccordionPanel>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>Virus Signature Matcher</AccordionTitle>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/Virus-Signature-Matcher"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Virus Signature Matcher
+              </a>
+            </AccordionTitle>
             <AccordionContent>
               <ul className='list-disc pl-5'>
                 <li>
@@ -86,7 +104,16 @@ export function Projects() {
 
         <AccordionPanel>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>Particle Collision Simulator</AccordionTitle>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/Particle-Collision-Simulator"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Particle Collision Simulator
+              </a>
+            </AccordionTitle>
             <AccordionContent>
               <ul className='list-disc pl-5'>
                 <li>
@@ -99,7 +126,16 @@ export function Projects() {
 
         <AccordionPanel>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>Doubt Drop</AccordionTitle>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/Doubt-Drop-Note-Taking"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Doubt Drop
+              </a>
+            </AccordionTitle>
             <AccordionContent>
               <ul className='list-disc pl-5'>
                 <li>
@@ -118,7 +154,16 @@ export function Projects() {
 
         <AccordionPanel>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>EduLog</AccordionTitle>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/EduLog"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                EduLog
+              </a>
+            </AccordionTitle>
             <AccordionContent>
               <ul className='list-disc pl-5'>
                 <li>
@@ -134,7 +179,16 @@ export function Projects() {
 
         <AccordionPanel>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>Grep Expression Evaluator</AccordionTitle>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/codecrafters-grep"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Grep Expression Simulator
+              </a>
+            </AccordionTitle>
             <AccordionContent>
               <ul className='list-disc pl-5'>
                 <li>
@@ -153,7 +207,16 @@ export function Projects() {
 
         <AccordionPanel>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>Adaptive Hybrid Transport Protocol</AccordionTitle>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/CS3103-assignment4"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Adaptive Hybrid Transport Protocol
+              </a>
+            </AccordionTitle>
             <AccordionContent>
               <ul className='list-disc pl-5'>
                 <li>
@@ -166,7 +229,16 @@ export function Projects() {
 
         <AccordionPanel>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>Boolean Retrieval Engine</AccordionTitle>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/CS3245-homework2"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Boolean Retrieval Engine
+              </a>
+            </AccordionTitle>
             <AccordionContent>
               <ul className='list-disc pl-5'>
                 <li>
