@@ -254,6 +254,31 @@ export function Projects() {
             </AccordionContent>
           </div>
         </AccordionPanel>
+
+         <AccordionPanel>
+          <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/CS3241-assignment5"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Ray Tracer
+              </a>
+            </AccordionTitle>
+            <AccordionContent>
+              <ul className='list-disc pl-5'>
+                <li>
+                  Built a ray tracer in C++ and OpenGL.
+                </li>
+                <li>
+                  Used modern C++ style such as RAII for clean code.
+                </li>
+              </ul>
+            </AccordionContent>
+          </div>
+        </AccordionPanel>
       </Accordion>
 
     </div>
