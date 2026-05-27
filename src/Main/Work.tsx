@@ -8,10 +8,10 @@ export function Work() {
           <TimelinePoint />
           <TimelineContent>
             <TimelineTime>May-Aug 2026</TimelineTime>
-            <TimelineTitle className='text-gray-900 dark:text-gray-900'>Intern, HTX</TimelineTitle>
+            <TimelineTitle className='text-gray-900 dark:text-gray-900'>UI/UX Intern for Generative AI Prototypes, HTX</TimelineTitle>
             <TimelineBody className='text-gray-600 dark:text-gray-600'>
               <ul className='list-disc space-y-1 pl-5'>
-                <li>Worked on RAG</li>
+                <li>Worked on a RAG chatbot</li>
               </ul>
             </TimelineBody>
           </TimelineContent>

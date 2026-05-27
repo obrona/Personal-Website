@@ -273,7 +273,7 @@ export function Projects() {
                   Built a ray tracer in C++ and OpenGL.
                 </li>
                 <li>
-                  Used modern C++ style such as RAII for clean code.
+                  Utilised modern C++ style such as RAII and smart pointers.
                 </li>
               </ul>
             </AccordionContent>
