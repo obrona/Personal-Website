@@ -4,6 +4,7 @@ import { Education } from "./Education";
 import { Skills } from "./Skills";
 import { Work } from "./Work";
 import { Projects } from "./Projects";
+import { Games } from "./Games";
 import { Dropdown, DropdownItem } from "flowbite-react"
 
 interface TabProps {
@@ -58,7 +59,7 @@ function Tabs(props: TabProps) {
   )
 }
 
-const tabs = ['Bio', 'Education', 'Work', 'Projects', 'Skills'];
+const tabs = ['Bio', 'Education', 'Work', 'Projects', 'Skills', 'Games'];
 
 export function MainPage() {
   const [selectedTab, setSelectedTab] = useState<string>(tabs[0]);
@@ -75,6 +76,7 @@ export function MainPage() {
       {selectedTab === 'Work' && <Work />}
       {selectedTab === 'Projects' && <Projects />}
       {selectedTab === 'Skills' && <Skills />}
+      {selectedTab === 'Games' && <Games />}
     </div>
   )
 }
