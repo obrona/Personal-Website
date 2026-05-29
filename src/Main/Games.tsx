@@ -2,6 +2,7 @@ import sokobanPic from '../assets/sokoban.jpeg';
 import reversiPic from '../assets/reversi.jpeg';
 import lineup4Pic from '../assets/lineup4.png';
 import battleshipPic from '../assets/battleship.png';
+import snakePic from '../assets/snake.png';
 
 interface GameCardProps {
   title: string;
@@ -64,6 +65,12 @@ const games: GameCardProps[] = [
     linkToGame: 'https://odin-battleship-five.vercel.app',
     linkToCode: 'https://github.com/obrona/odin-battleship',
     pic: battleshipPic,
+  },
+  {
+    title: 'Snake',
+    linkToGame: 'https://snake-neon-three-36.vercel.app',
+    linkToCode: 'https://github.com/obrona/Snake',
+    pic: snakePic,
   }
 ]
 
