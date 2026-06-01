@@ -31,7 +31,7 @@ export function Skills() {
     <div className='w-full flex flex-col gap-8 items-center pt-24'>
       <SkillsGrid 
         title='Languages'
-        skills={['C++', 'Java', 'Python', 'JavaScript', 'TypeScript', 'Go', 'SQL', 'HTML', 'CSS']}
+        skills={['C', 'C++', 'Java', 'Python', 'JavaScript', 'TypeScript', 'Go', 'SQL', 'HTML', 'CSS']}
       />
 
       <SkillsGrid
