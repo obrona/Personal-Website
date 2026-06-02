@@ -3,6 +3,7 @@ import reversiPic from '../assets/reversi.jpeg';
 import lineup4Pic from '../assets/lineup4.png';
 import battleshipPic from '../assets/battleship.png';
 import snakePic from '../assets/snake.png';
+import minesweeper from '../assets/minesweeper.png';
 
 interface GameCardProps {
   title: string;
@@ -71,6 +72,12 @@ const games: GameCardProps[] = [
     linkToGame: 'https://snake-neon-three-36.vercel.app',
     linkToCode: 'https://github.com/obrona/Snake',
     pic: snakePic,
+  },
+  {
+    title: 'Minesweeper',
+    linkToGame: 'https://minesweeper-three-woad.vercel.app/',
+    linkToCode: 'https://github.com/obrona/Minesweeper',
+    pic: minesweeper,
   }
 ]
 
