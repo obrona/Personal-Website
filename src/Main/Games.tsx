@@ -4,6 +4,7 @@ import lineup4Pic from '../assets/lineup4.png';
 import battleshipPic from '../assets/battleship.png';
 import snakePic from '../assets/snake.png';
 import minesweeper from '../assets/minesweeper.png';
+import slidingblock from '../assets/sliding-block.jpeg';
 
 interface GameCardProps {
   title: string;
@@ -78,6 +79,12 @@ const games: GameCardProps[] = [
     linkToGame: 'https://minesweeper-three-woad.vercel.app/',
     linkToCode: 'https://github.com/obrona/Minesweeper',
     pic: minesweeper,
+  },
+  {
+    title: 'Sliding Block',
+    linkToGame: 'https://sliding-block.vercel.app/',
+    linkToCode: 'https://github.com/obrona/Sliding-Block',
+    pic: slidingblock,
   }
 ]
 
