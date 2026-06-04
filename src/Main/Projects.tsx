@@ -186,7 +186,7 @@ export function Projects() {
                 rel="noreferrer"
                 className="text-blue-600 underline"
               >
-                Grep Expression Simulator
+                Grep Expression Evaluator
               </a>
             </AccordionTitle>
             <AccordionContent>
