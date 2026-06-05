@@ -5,6 +5,7 @@ import battleshipPic from '../assets/battleship.png';
 import snakePic from '../assets/snake.png';
 import minesweeper from '../assets/minesweeper.png';
 import slidingblock from '../assets/sliding-block.jpeg';
+import tetris from '../assets/tetris.png';
 
 interface GameCardProps {
   title: string;
@@ -85,13 +86,19 @@ const games: GameCardProps[] = [
     linkToGame: 'https://sliding-block.vercel.app/',
     linkToCode: 'https://github.com/obrona/Sliding-Block',
     pic: slidingblock,
+  },
+  {
+    title: 'Tetris',
+    linkToGame: 'https://tetris-two-iota.vercel.app/',
+    linkToCode: 'https://github.com/obrona/Tetris',
+    pic: tetris,
   }
 ]
 
 export function Games() {
   return (
     <div className='w-screen min-h-screen pt-24 pb-4 flex flex-col justify-center items-center'>
-      <div className='grid grid-cols-[repeat(2,320px)] auto-rows-[400px] gap-4'>
+      <div className='grid grid-cols-[repeat(2,320px)] auto-rows-[400px] gap-y-8 gap-x-6'>
         {games.map(g => {
           return (
             <GameCard key={g.title} {...g} />
