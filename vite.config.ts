@@ -10,4 +10,16 @@ export default defineConfig({
     tailwindcss(),
     flowbiteReact()
   ],
+  server: {
+    proxy: {
+      "/api/leetcode": {
+        target: "https://leetcode.com",
+        changeOrigin: true,
+        rewrite: () => "/graphql/",
+        headers: {
+          Referer: "https://leetcode.com/u/tl8772/",
+        },
+      },
+    },
+  },
 })
