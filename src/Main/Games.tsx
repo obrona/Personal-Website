@@ -6,6 +6,7 @@ import snakePic from '../assets/snake.png';
 import minesweeper from '../assets/minesweeper.png';
 import slidingblock from '../assets/sliding-block.jpeg';
 import tetris from '../assets/tetris.png';
+import mastermind from '../assets/mastermind.jpeg';
 
 interface GameCardProps {
   title: string;
@@ -92,6 +93,12 @@ const games: GameCardProps[] = [
     linkToGame: 'https://tetris-two-iota.vercel.app/',
     linkToCode: 'https://github.com/obrona/Tetris',
     pic: tetris,
+  },
+  {
+    title: 'Mastermind',
+    linkToGame: 'https://mastermind-tan-beta.vercel.app/',
+    linkToCode: 'https://github.com/obrona/Mastermind',
+    pic: mastermind,
   }
 ]
 
