@@ -1,11 +1,11 @@
-import { Accordion, AccordionContent, AccordionPanel, AccordionTitle } from "flowbite-react";
+import { AccordionContent, AccordionPanel, AccordionTitle, ChevronDownIcon } from "flowbite-react";
 
 export function Projects() {
   return (
     <div className='h-full w-full flex flex-col items-center'>
-      <Accordion  collapseAll className='mt-24 mb-16 w-full max-w-2xl border-0'>
-        <AccordionPanel>
-          <div className='overflow-hidden rounded-lg border dark:border-gray-700'>
+      <div className='mt-24 mb-16 w-full max-w-2xl border-0'>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
+          <div className='overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
                 href="https://github.com/obrona/peerprep-g04"
@@ -33,7 +33,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -58,7 +58,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -80,7 +80,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -102,7 +102,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -124,7 +124,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -152,7 +152,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -177,7 +177,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -205,7 +205,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -227,7 +227,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -255,7 +255,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-         <AccordionPanel>
+         <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
@@ -279,8 +279,16 @@ export function Projects() {
             </AccordionContent>
           </div>
         </AccordionPanel>
-      </Accordion>
+      </div>
 
+      <button 
+        className="fixed bottom-16 right-16 bg-blue-400 h-10 w-10 rounded-full text-white text-2xl"
+        onClick={() => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+      >
+        ↑
+      </button>
     </div>
   )
 }

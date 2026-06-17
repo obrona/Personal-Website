@@ -19,9 +19,9 @@ function Tabs(props: TabProps) {
   function tabStyle(is_selected: boolean) {
     switch (is_selected) {
       case true:
-        return 'rounded-[16px] border border-gray-200 p-2 bg-blue-200'
+        return 'rounded-[16px] border border-gray-200 p-2 bg-blue-200 cursor-default'
       default:
-        return 'rounded-[16px] p-2 hover:bg-gray-200'
+        return 'rounded-[16px] p-2 hover:bg-gray-200 cursor-pointer'
     }
   }
 
@@ -33,7 +33,7 @@ function Tabs(props: TabProps) {
         return (
           <div 
             key={tab}
-            className={`cursor-default ${tabStyle(tab === selected)}`}
+            className={`${tabStyle(tab === selected)}`}
             onClick={() => onSelect(tab)}
           >
             {tab}
