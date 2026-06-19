@@ -7,6 +7,7 @@ import minesweeper from '../assets/minesweeper.png';
 import slidingblock from '../assets/sliding-block.jpeg';
 import tetris from '../assets/tetris.png';
 import mastermind from '../assets/mastermind.jpeg';
+import tictactoe from '../assets/tictactoe.jpeg';
 
 interface GameCardProps {
   title: string;
@@ -99,6 +100,12 @@ const games: GameCardProps[] = [
     linkToGame: 'https://mastermind-tan-beta.vercel.app/',
     linkToCode: 'https://github.com/obrona/Mastermind',
     pic: mastermind,
+  },
+  {
+    title: 'Tic Tac Toe',
+    linkToGame: 'https://tic-tac-toe-iota-umber-77.vercel.app/',
+    linkToCode: 'https://github.com/obrona/TicTacToe',
+    pic: tictactoe,
   }
 ]
 
