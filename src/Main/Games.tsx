@@ -8,6 +8,7 @@ import slidingblock from '../assets/sliding-block.jpeg';
 import tetris from '../assets/tetris.png';
 import mastermind from '../assets/mastermind.jpeg';
 import tictactoe from '../assets/tictactoe.jpeg';
+import tangram from '../assets/tangram.png';
 
 interface GameCardProps {
   title: string;
@@ -106,6 +107,12 @@ const games: GameCardProps[] = [
     linkToGame: 'https://tic-tac-toe-iota-umber-77.vercel.app/',
     linkToCode: 'https://github.com/obrona/TicTacToe',
     pic: tictactoe,
+  },
+  {
+    title: 'Tangram',
+    linkToGame: 'https://tangram-chi.vercel.app/',
+    linkToCode: 'https://github.com/obrona/Tangram',
+    pic: tangram,
   }
 ]
 

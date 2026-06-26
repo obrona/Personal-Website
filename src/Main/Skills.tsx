@@ -6,7 +6,7 @@ interface SkillsGridProp {
 function SkillsGrid(props: SkillsGridProp) {
   const { title, skills } = props;
   return (
-    <div className='w-128'>
+    <div className='w-lg'>
       <h1>{title}</h1>
       <div className='mt-2 grid grid-cols-[repeat(4,128px)] auto-rows-[64px] gap-2'>
         {skills.map(skill => {
