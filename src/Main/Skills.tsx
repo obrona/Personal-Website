@@ -28,15 +28,25 @@ function SkillsGrid(props: SkillsGridProp) {
 
 export function Skills() {
   return (
-    <div className='w-full flex flex-col gap-8 items-center pt-24'>
+    <div className='w-full flex flex-col gap-8 items-center pt-24 mb-4'>
       <SkillsGrid 
         title='Languages'
         skills={['C', 'C++', 'Java', 'Python', 'JavaScript', 'TypeScript', 'Go', 'SQL', 'HTML', 'CSS']}
       />
 
       <SkillsGrid
-        title='Web Development'
-        skills={['React', 'Node.js', 'Express', 'SocketIO', 'WebSocket', 'Redis', 'MaterialUI', 'TailwindCSS']}
+        title='Frontend'
+        skills={['React', 'MaterialUI', 'TailwindCSS', 'Redux', 'Recoil']}
+      />
+
+      <SkillsGrid
+        title='Backend'
+        skills={['Express', 'FastAPI', 'Socket.IO', 'WebSocket', 'Redis']}
+      />
+
+      <SkillsGrid
+        title='Database'
+        skills={['PostgreSQL', 'SQLite', 'MongoDB']}
       />
 
       <SkillsGrid
@@ -46,7 +56,7 @@ export function Skills() {
 
       <SkillsGrid
         title='Big Data'
-        skills={['Hadoop', 'Spark']}
+        skills={['Hadoop', 'Spark', 'NumPy']}
       />
 
       <SkillsGrid
