@@ -9,6 +9,7 @@ import tetris from '../assets/tetris.png';
 import mastermind from '../assets/mastermind.jpeg';
 import tictactoe from '../assets/tictactoe.jpeg';
 import tangram from '../assets/tangram.png';
+import maze from '../assets/maze.png';
 
 interface GameCardProps {
   title: string;
@@ -113,13 +114,19 @@ const games: GameCardProps[] = [
     linkToGame: 'https://tangram-chi.vercel.app/',
     linkToCode: 'https://github.com/obrona/Tangram',
     pic: tangram,
+  },
+  {
+    title: 'Maze Generator',
+    linkToGame: 'https://maze-generator-blond.vercel.app/',
+    linkToCode: 'https://github.com/obrona/MazeGenerator',
+    pic: maze,
   }
 ]
 
 export function Games() {
   return (
     <div className='w-screen min-h-screen pt-24 pb-4 flex flex-col justify-center items-center'>
-      <div className='grid grid-cols-[repeat(2,320px)] auto-rows-[400px] gap-y-8 gap-x-6'>
+      <div className='grid grid-cols-[repeat(3,320px)] auto-rows-[400px] gap-y-8 gap-x-6'>
         {games.map(g => {
           return (
             <GameCard key={g.title} {...g} />
