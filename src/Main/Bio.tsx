@@ -82,9 +82,9 @@ function LeetCodeSummary() {
           </div>
 
           <div className="mt-5">
-            <h3 className="font-medium text-gray-900">Top languages</h3>
+            <h3 className="font-medium text-gray-900">Languages</h3>
             <div className="mt-2 flex flex-wrap gap-2">
-              {stats.topLanguages.map((language) => (
+              {stats.languages.map((language) => (
                 <span
                   key={language.languageName}
                   className="rounded-full bg-blue-50 px-3 py-1 text-sm text-blue-800"

@@ -46,7 +46,7 @@ export interface LeetCodeStats {
     medium: number;
     hard: number;
   };
-  topLanguages: LanguageCount[];
+  languages: LanguageCount[];
 }
 
 function countForDifficulty(
@@ -96,8 +96,8 @@ export async function fetchLeetCodeStats(
       medium: countForDifficulty(submissionCounts, "Medium"),
       hard: countForDifficulty(submissionCounts, "Hard"),
     },
-    topLanguages: [...user.languageProblemCount]
-      .sort((first, second) => second.problemsSolved - first.problemsSolved)
-      .slice(0, 3),
+    languages: [...user.languageProblemCount]
+      .filter((language) => language.problemsSolved > 0)
+      .sort((first, second) => second.problemsSolved - first.problemsSolved),
   };
 }
