@@ -11,7 +11,19 @@ export function Work() {
             <TimelineTitle className='text-gray-900 dark:text-gray-900'>UI/UX Intern for Generative AI Prototypes, HTX</TimelineTitle>
             <TimelineBody className='text-gray-600 dark:text-gray-600'>
               <ul className='list-disc space-y-1 pl-5'>
-                <li>Worked on a RAG chatbot</li>
+                <li>Worked on SIRIS, an RAG powered chatbot for the Police Coast Guard</li>
+                <li>Developed a tutorial flow feature, improving user onboarding experience.</li>
+                <li>Developed multi window view so that users can see different prodecures at once.</li>
+                <li>Developed multi-step agentic document retrieval and procedure generation using Langraph.</li>
+                <li>Developed a cross encoder stage in the document retrieval stage, improving accuracy and recall.</li>
+                <li>Leveraged on agentic coding tools like Claude Code, OpenCode to improve productivity.</li>
+                <li>
+                  Tech Stack
+                  <ul className='mt-1 list-[circle] space-y-1 pl-5'>
+                    <li>Frontend: React, JavaScript, HTML, TailwindCSS</li>
+                    <li>Backend: Python, FastAPI, SQLite, Langraph, ChromaDB</li>
+                  </ul>
+                </li>
               </ul>
             </TimelineBody>
           </TimelineContent>
