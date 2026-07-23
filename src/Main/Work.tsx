@@ -15,14 +15,10 @@ export function Work() {
                 <li>Developed a tutorial flow feature, improving user onboarding experience.</li>
                 <li>Developed multi window view so that users can see different prodecures at once.</li>
                 <li>Developed multi-step agentic document retrieval and procedure generation using Langraph.</li>
-                <li>Developed a cross encoder stage in the document retrieval stage, improving accuracy and recall.</li>
+                <li>Developed a cross encoder stage in the document retrieval stage, improving accuracy.</li>
                 <li>Leveraged on agentic coding tools like Claude Code, OpenCode to improve productivity.</li>
                 <li>
-                  Tech Stack
-                  <ul className='mt-1 list-[circle] space-y-1 pl-5'>
-                    <li>Frontend: React, JavaScript, HTML, TailwindCSS</li>
-                    <li>Backend: Python, FastAPI, SQLite, Langraph, ChromaDB</li>
-                  </ul>
+                  Tech Stack: React, JavaScript, HTML, TailwindCSS (frontend); Python, FastAPI, SQLite, LangGraph, ChromaDB, vLLM (backend)
                 </li>
               </ul>
             </TimelineBody>
@@ -40,11 +36,7 @@ export function Work() {
                 <li>Develop frontend components using React</li>
                 <li>Developed backend features using Go and Postgres</li>
                 <li>
-                  Tech Stack
-                  <ul className='mt-1 list-[circle] space-y-1 pl-5'>
-                    <li>Frontend: React, TypeScript, HTML, CSS, Redux, Recoil</li>
-                    <li>Backend: Go, PostgreSQL</li>
-                  </ul>
+                  Tech Stack: React, TypeScript, Redux, Recoil, HTML, CSS (frontend); Go, PostgreSQL (backend)
                 </li>
               </ul>
             </TimelineBody>

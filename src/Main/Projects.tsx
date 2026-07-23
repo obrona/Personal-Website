@@ -76,7 +76,7 @@ export function Projects() {
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
-                href="https://github.com/obrona/Order-Matching-Engine"
+                href="https://github.com/obrona/CppConcurrencyInAction"
                 target="_blank" 
                 rel="noreferrer"
                 className="text-blue-600 underline"
@@ -121,7 +121,10 @@ export function Projects() {
             <AccordionContent>
               <ul className='list-disc pl-5 text-sm'>
                 <li>
-                  Programmed a train network simulator in C++, and parallelized with OpenMPI, achieving a 2x speedup compared to a sequential program, when run with 8 CPU cores.
+                  Designed and implemented a distributed discrete-event simulator in C++17 modeling a multi-line metro network (trains, platforms, holding areas, and inter-station links) advancing in synchronized time ticks.
+                </li>
+                <li>
+                  Parallelized the simulation with MPI, partitioning ~N platforms across P processes (round-robin load balancing) and exchanging train state each tick via non-blocking MPI_Isend/MPI_Irecv + MPI_Waitall, using a bijective sender/receiver→tag encoding to disambiguate concurrent messages.
                 </li>
               </ul>
             </AccordionContent>
