@@ -17,16 +17,55 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc space-y-1 pl-5'>
+              <ul className='list-disc space-y-1 pl-5 text-sm'>
                 <li>
-                  Developed a website where users can match and code leetcode questions together
+                  Architected a microservices platform of 6 independent Node.js/Express services (user, matching, question, collaboration, chat, submission) orchestrated with Docker Compose, backed by PostgreSQL and Redis.
                 </li>
                 <li>
-                  Tech stack
-                  <ul className='mt-1 list-[circle] space-y-1 pl-5'>
-                    <li>Frontend: React, JavaScript, HTML, CSS</li>
-                    <li>Backend: JavaScript, Node, WebSocket, SocketIO, Redis, PostgreSQL</li>
-                  </ul>
+                  Built a real-time collaborative code editor using Yjs CRDTs and the Monaco editor, enabling multiple users to edit code simultaneously with conflict-free synchronization.
+                </li>
+                <li>
+                  Implemented a Redis-backed matching engine that pairs users in real time by topic and difficulty, plus live chat via Socket.IO.
+                </li>
+                <li>
+                  Integrated the Judge0 API for in-browser code execution across languages and the Google Gemini API for AI-assisted hints/feedback.
+                </li>
+                <li>
+                  Secured all services with JWT-based authentication and delivered automated test coverage using Vitest.
+                </li>
+                <li>
+                  Built a modern UI for the frontend using React, styled with pure CSS.
+                </li>
+              </ul>
+            </AccordionContent>
+          </div>
+        </AccordionPanel>
+
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
+          <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/Software-Transactional-Memory"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Software Transactional Memory Engine
+              </a>
+            </AccordionTitle>
+            <AccordionContent>
+              <ul className='list-disc space-y-1 pl-5 text-sm'>
+                <li>
+                  Built a software transactional memory engine in C++20 that executes transactions from 32 concurrent threads with full serializability, using strict two-phase locking over per-address reader-writer locks with early lock release to minimize contention windows.
+                </li>
+                <li>
+                  Designed a custom fair reader-writer lock supporting read/write/upgrade modes, FIFO wake ordering with reader batching, and O(1) max-priority waiter queries, built on std::atomic wait/notify.
+                </li>
+                <li>
+                  Implemented wait-die deadlock prevention with timestamp reuse across retries, guaranteeing both deadlock-freedom and starvation-freedom (the oldest transaction can never abort).
+                </li>
+                <li>
+                  Achieved near-linear scaling on disjoint workloads (932K → 3.6M txn/s from 1 to 8 threads on a 16-core machine) with no global lock on any execution path.
                 </li>
               </ul>
             </AccordionContent>
@@ -46,12 +85,21 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc space-y-1 pl-5'>
+              <ul className='list-disc space-y-1 pl-5 text-sm'>
                 <li>
-                  Implemented an order matching engine that can run concurrently. Use C++ atomics to allow orders from the same side, e.g buy orders, to match with orders from the other side concurrently without locks. 
+                  Built a concurrent limit order book in C++20 where matching, resting, and cancellation on the hot path are lock-free: orders insert via CAS-splice into sorted intrusive linked lists, and quantity consumption/cancellation linearize on a single CAS of an atomic remaining-quantity counter, guaranteeing no fill is double-consumed or lost.
                 </li>
                 <li>
-                  Uses synchronisation primitives such as mutexes and conditional variables to ensure only orders from a single side are processed together.
+                  Designed a phase-separation scheme (adapted from the single-lane-bridge problem) that partitions operations so each list is either insert-only or consume-only at any moment, eliminating the concurrent insert/unlink race and removing the need for hazard pointers or reference counting.
+                </li>
+                <li>
+                  Implemented safe memory reclamation via logical-then-physical deletion: dead nodes are queued on an intrusive lock-free stack and freed in batch by the last thread exiting a phase, ensuring exactly-once frees with no use-after-free.
+                </li>
+                <li>
+                  Preserved price-time (FIFO) priority and best-price matching under full concurrency using sorted CAS-insertion with tie-breaking comparators.
+                </li>
+                <li>
+                  Made concurrent cancellation idempotent via CAS-to-zero semantics, so duplicate cancels from the same user succeed at most once.
                 </li>
               </ul>
             </AccordionContent>
@@ -71,7 +119,7 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc pl-5'>
+              <ul className='list-disc pl-5 text-sm'>
                 <li>
                   Programmed a train network simulator in C++, and parallelized with OpenMPI, achieving a 2x speedup compared to a sequential program, when run with 8 CPU cores.
                 </li>
@@ -93,7 +141,7 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc pl-5'>
+              <ul className='list-disc pl-5 text-sm'>
                 <li>
                   Programmed a virus signature matcher in C++ and parallelized with CUDA, achieving sub 1.0s total execution time when run on NVIDIA H100-96 GPU on 1000 viruses and 1000 signatures, each with a length of 1000 characters, using a naive O(mn) sub-string matching algorithm.
                 </li>
@@ -115,7 +163,7 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc pl-5'>
+              <ul className='list-disc pl-5 text-sm'>
                 <li>
                   Programmed a particle collision simulator in C++ and parallelised with OpenMP, achieving close to 800% speedup when run on a 8 core CPU.
                 </li>
@@ -137,7 +185,7 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc pl-5'>
+              <ul className='list-disc pl-5 text-sm'>
                 <li>
                   Developed a website to help users take notes and manage their time using a pomodoro timer using React for frontend and Google Firebase as the backend
                 </li>
@@ -165,7 +213,7 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc pl-5'>
+              <ul className='list-disc pl-5 text-sm'>
                 <li>
                   Built an app for freelance tuition teachers to manage students’ info and track lessons
                 </li>
@@ -190,7 +238,7 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc pl-5'>
+              <ul className='list-disc pl-5 text-sm'>
                 <li>
                   Develop a grep program that can handle match literal character, match digit, positive and negative character groups, start and end string anchor, match 1 or more, match 0 or more, wildcards and alternation.
                 </li>
@@ -218,7 +266,7 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc pl-5'>
+              <ul className='list-disc pl-5 text-sm'>
                 <li>
                   Programmed an event driven, asynchronous network transport protocol using Python sockets.
                 </li>
@@ -240,7 +288,7 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc pl-5'>
+              <ul className='list-disc pl-5 text-sm'>
                 <li>
                   Implemented a boolean retrieval engine in Python.
                 </li>
@@ -268,7 +316,7 @@ export function Projects() {
               </a>
             </AccordionTitle>
             <AccordionContent>
-              <ul className='list-disc pl-5'>
+              <ul className='list-disc pl-5 text-sm'>
                 <li>
                   Built a ray tracer in C++ and OpenGL.
                 </li>
