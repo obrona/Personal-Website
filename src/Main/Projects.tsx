@@ -76,7 +76,7 @@ export function Projects() {
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
-                href="https://github.com/obrona/CppConcurrencyInAction"
+                href="https://github.com/obrona/order-book"
                 target="_blank" 
                 rel="noreferrer"
                 className="text-blue-600 underline"
