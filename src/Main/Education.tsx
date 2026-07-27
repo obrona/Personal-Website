@@ -17,9 +17,9 @@ export function Education() {
                 <li>
                   Focus Areas
                   <ul className='mt-1 list-[circle] space-y-1 pl-5'>
-                    <li>Parallel Computing</li>
-                    <li>Database Systems</li>
-                    <li>Networking and Distributed Systems</li>
+                    <li>Parallel Computing (Dist)</li>
+                    <li>Database Systems (Dist)</li>
+                    <li>Networking and Distributed Systems (Merit)</li>
                   </ul>
                 </li>
               </ul>
