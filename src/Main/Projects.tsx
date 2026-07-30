@@ -45,6 +45,37 @@ export function Projects() {
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
+                href="https://github.com/obrona/Doubt-Drop-Note-Taking"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Doubt Drop
+              </a>
+            </AccordionTitle>
+            <AccordionContent>
+              <ul className='list-disc pl-5 text-sm'>
+                <li>
+                  Built Doubt Drop, a React single-page study-productivity platform for students combining note-taking, real-time peer chat, a Pomodoro timer, and a shared calendar behind an authenticated multi-page router (React Router, Context API for global auth/session state).
+                </li>
+                <li>
+                  Designed the full data layer on Firebase — Firestore collections for notes, calendar events, modules, and user profiles, plus Firebase Storage for user-uploaded profile images — with per-user query scoping so each account only reads and writes its own records.
+                </li>
+                <li>
+                  Implemented a real-time, module-scoped group chat with Socket.IO, including live message streaming, per-user avatars rendered inline with messages, and session-persisted chat login.
+                </li>
+                <li>
+                  Built the UI with Material UI (MUI v5) and a responsive masonry note grid, and wrote Jest / React Testing Library unit tests with mocked Firestore calls to cover note rendering, filtering, and deletion.
+                </li>
+              </ul>
+            </AccordionContent>
+          </div>
+        </AccordionPanel>
+
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
+          <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
+            <AccordionTitle>
+              <a
                 href="https://github.com/obrona/Software-Transactional-Memory"
                 target="_blank" 
                 rel="noreferrer"
@@ -146,7 +177,10 @@ export function Projects() {
             <AccordionContent>
               <ul className='list-disc pl-5 text-sm'>
                 <li>
-                  Programmed a virus signature matcher in C++ and parallelized with CUDA, achieving sub 1.0s total execution time when run on NVIDIA H100-96 GPU on 1000 viruses and 1000 signatures, each with a length of 1000 characters, using a naive O(mn) sub-string matching algorithm.
+                  Built a CUDA program that scans FASTQ sequencing samples for viral DNA signatures with wildcard matching and computes Phred+33 quality-weighted match scores.
+                </li>
+                <li>
+                  Designed a fused kernel that assigns each (sample, signature) pair a thread block on a 2-D grid, using strided scanning plus shared-memory tree reductions (min for leftmost match index, sum for score) to avoid a second kernel launch and global-memory round trip.
                 </li>
               </ul>
             </AccordionContent>
@@ -175,33 +209,7 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
-          <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>
-              <a
-                href="https://github.com/obrona/Doubt-Drop-Note-Taking"
-                target="_blank" 
-                rel="noreferrer"
-                className="text-blue-600 underline"
-              >
-                Doubt Drop
-              </a>
-            </AccordionTitle>
-            <AccordionContent>
-              <ul className='list-disc pl-5 text-sm'>
-                <li>
-                  Developed a website to help users take notes and manage their time using a pomodoro timer using React for frontend and Google Firebase as the backend
-                </li>
-                <li>
-                  Developed a chat function in the website using Express + SocketIO and MongoDB as the database to facilitate communication between users. 
-                </li>
-                <li>
-                  Obtained Apollo Achievement (Advanced) Level. 
-                </li>
-              </ul>
-            </AccordionContent>
-          </div>
-        </AccordionPanel>
+        
 
         <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>

@@ -10,6 +10,7 @@ import mastermind from '../assets/mastermind.jpeg';
 import tictactoe from '../assets/tictactoe.jpeg';
 import tangram from '../assets/tangram.png';
 import maze from '../assets/maze.png';
+import connector from '../assets/connector.png';
 
 interface GameCardProps {
   title: string;
@@ -120,6 +121,12 @@ const games: GameCardProps[] = [
     linkToGame: 'https://maze-generator-blond.vercel.app/',
     linkToCode: 'https://github.com/obrona/MazeGenerator',
     pic: maze,
+  },
+  {
+    title: 'Connector',
+    linkToGame: 'https://connector-lake.vercel.app/',
+    linkToCode: 'https://github.com/obrona/Connector',
+    pic: connector,
   }
 ]
 
