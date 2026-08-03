@@ -29,7 +29,7 @@ export function Work() {
           <TimelinePoint />
           <TimelineContent>
             <TimelineTime>May-Aug 2025</TimelineTime>
-            <TimelineTitle className='text-gray-900 dark:text-gray-900'>Software Engineer Intern, NUS AICET</TimelineTitle>
+            <TimelineTitle className='text-gray-900 dark:text-gray-900'>Software Engineer Intern, NUS AICET (Softmark)</TimelineTitle>
             <TimelineBody className='text-gray-600 dark:text-gray-600'>
               <ul className='list-disc space-y-1 pl-5'>
                 <li>Interned with the Softmark team, developing features to help teachers mark scripts more efficiently</li>

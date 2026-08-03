@@ -15,12 +15,7 @@ export function Education() {
                 <li>2nd Major in Mathematics</li>
                 <li>Academic Year 23/24 Sem 2 Dean's List</li>
                 <li>
-                  Focus Areas
-                  <ul className='mt-1 list-[circle] space-y-1 pl-5'>
-                    <li>Parallel Computing (Dist)</li>
-                    <li>Database Systems (Dist)</li>
-                    <li>Networking and Distributed Systems (Merit)</li>
-                  </ul>
+                  Focus Areas: Parallel Computing (Dist), Database Systems (Dist), Networking and Distributed Systems (Merit)
                 </li>
               </ul>
             </TimelineBody>
