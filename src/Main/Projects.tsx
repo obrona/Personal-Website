@@ -202,7 +202,10 @@ export function Projects() {
             <AccordionContent>
               <ul className='list-disc pl-5 text-sm'>
                 <li>
-                  Programmed a particle collision simulator in C++ and parallelised with OpenMP, achieving close to 800% speedup when run on a 8 core CPU.
+                  Built a multithreaded 2D physics simulator resolving wall/particle collisions for 100K+ particles per timestep, using spatial binning with a staggered grid layout to eliminate cross-thread race conditions without locks.
+                </li>
+                <li>
+                  Tuned parallel performance via guided scheduling for load balancing and restructured bin storage to reduce false sharing, cutting runtime significantly over a naive index-based approach.
                 </li>
               </ul>
             </AccordionContent>
