@@ -212,61 +212,6 @@ export function Projects() {
           </div>
         </AccordionPanel>
 
-        
-
-        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
-          <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>
-              <a
-                href="https://github.com/obrona/EduLog"
-                target="_blank" 
-                rel="noreferrer"
-                className="text-blue-600 underline"
-              >
-                EduLog
-              </a>
-            </AccordionTitle>
-            <AccordionContent>
-              <ul className='list-disc pl-5 text-sm'>
-                <li>
-                  Built an app for freelance tuition teachers to manage students’ info and track lessons
-                </li>
-                <li>
-                  Used JUnit Test framework for test coverage, Gradlew for build automation, Git for version control, JavaFX for UI, Github for issue tracking
-                </li>
-              </ul>
-            </AccordionContent>
-          </div>
-        </AccordionPanel>
-
-        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
-          <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
-            <AccordionTitle>
-              <a
-                href="https://github.com/obrona/codecrafters-grep"
-                target="_blank" 
-                rel="noreferrer"
-                className="text-blue-600 underline"
-              >
-                Grep Expression Evaluator
-              </a>
-            </AccordionTitle>
-            <AccordionContent>
-              <ul className='list-disc pl-5 text-sm'>
-                <li>
-                  Develop a grep program that can handle match literal character, match digit, positive and negative character groups, start and end string anchor, match 1 or more, match 0 or more, wildcards and alternation.
-                </li>
-                <li>
-                  Implemented a finite state automata in Java to determine whether the regex pattern exists in the string.
-                </li>
-                <li>
-                  Use JUnit for testing, Gradlew for build automation.
-                </li>
-              </ul>
-            </AccordionContent>
-          </div>
-        </AccordionPanel>
-
         <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
@@ -282,7 +227,38 @@ export function Projects() {
             <AccordionContent>
               <ul className='list-disc pl-5 text-sm'>
                 <li>
-                  Programmed an event driven, asynchronous network transport protocol using Python sockets.
+                  Built a dual-channel transport over UDP — reliable (Selective Repeat ARQ, sliding window, CRC32) and unreliable — letting games choose per-message delivery semantics.
+                </li>
+                <li>
+                  Implemented sender and receiver as multi-threaded event-driven state machines with per-peer state, multiplexing many concurrent peers on one socket.
+                </li>
+              </ul>
+            </AccordionContent>
+          </div>
+        </AccordionPanel>
+
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
+          <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/codecrafters-grep"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                Regex Engine
+              </a>
+            </AccordionTitle>
+            <AccordionContent>
+              <ul className='list-disc pl-5 text-sm'>
+                <li>
+                  Built a regular-expression engine from scratch in Java, compiling patterns into a graph-based nondeterministic finite automaton (NFA).
+                </li>
+                <li>
+                  Implemented recursive parsing for nested groups, alternation, quantifiers, character classes, wildcards, and string anchors.
+                </li>
+                <li>
+                  Developed polymorphic matching nodes for literals, digits, alphanumeric characters, positive/negative character sets, and epsilon transitions.
                 </li>
               </ul>
             </AccordionContent>
@@ -304,20 +280,51 @@ export function Projects() {
             <AccordionContent>
               <ul className='list-disc pl-5 text-sm'>
                 <li>
-                  Implemented a boolean retrieval engine in Python.
+                  Built a disk-backed inverted index using SPIMI, processing documents in 1-million-token blocks and externally merging partial indexes to support datasets larger than memory.
                 </li>
                 <li>
-                  Used shunting yard algorithm to parse boolean expressions quickly.
+                  Implemented Boolean search with AND, OR, NOT, parentheses, query validation, and Porter stemming using a shunting-yard parser.
                 </li>
                 <li>
-                  Used SPIMI to build a document index for large corpora that cannot fit in memory.
+                  Optimized retrieval through byte-offset posting-list access, skip pointers, a 100-entry LRU cache, and specialized set-intersection operations; created 17 unit tests for core functionality.
                 </li>
               </ul>
             </AccordionContent>
           </div>
         </AccordionPanel>
 
-         <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
+          <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
+            <AccordionTitle>
+              <a
+                href="https://github.com/obrona/EduLog"
+                target="_blank" 
+                rel="noreferrer"
+                className="text-blue-600 underline"
+              >
+                EduLog
+              </a>
+            </AccordionTitle>
+            <AccordionContent>
+              <ul className='list-disc pl-5 text-sm'>
+                <li>
+                  Collaborated in a 5-person team to develop a cross-platform desktop application for tutors, supporting student records, lesson scheduling, payment tracking, and revenue calculation through 17 CLI-style commands.
+                </li>
+                <li>
+                  Implemented paid/unpaid filtering and payment-status workflows, including command parsing, input validation, model updates, and JavaFX list synchronization.
+                </li>
+                <li>
+                  Added unit tests for filtering and payment commands within a 400+ test suite; maintained code quality using Checkstyle, JaCoCo, and GitHub Actions.
+                </li>
+                <li>
+                  Contributed to the application’s layered UI–Logic–Model–Storage architecture and JSON-based data persistence.
+                </li>
+              </ul>
+            </AccordionContent>
+          </div>
+        </AccordionPanel>
+
+        <AccordionPanel alwaysOpen isOpen arrowIcon={ChevronDownIcon}>
           <div className='mt-4 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700'>
             <AccordionTitle>
               <a
